@@ -44,7 +44,6 @@ let loadProductos = async () => {
     }
 
     try {
-
         let urlXml = 'https://raw.githubusercontent.com/Bootcamp-Espol/Datos/main/products.xml'
 
         let responseXml = await fetch( urlXml ); 
