@@ -3,7 +3,7 @@ let loadProductos = async () => {
     let row = document.getElementsByClassName('row')[3]
     row.innerHTML = ''
     try {
-        let urlJson = 'https://raw.githubusercontent.com/Bootcamp-Espol/FSD02/main/S03D03/clase/recursos/products.json'
+        let urlJson = 'https://raw.githubusercontent.com/Bootcamp-Espol/Datos/main/products.json'
 
         let responseJson = await fetch( urlJson ); 
         let resultJson = await responseJson.json();
@@ -45,7 +45,7 @@ let loadProductos = async () => {
 
     try {
 
-        let urlXml = 'https://raw.githubusercontent.com/Bootcamp-Espol/FSD02/main/S03D03/clase/recursos/products.xml'
+        let urlXml = 'https://raw.githubusercontent.com/Bootcamp-Espol/Datos/main/products.xml'
 
         let responseXml = await fetch( urlXml ); 
         let resultXml = await responseXml.text()
